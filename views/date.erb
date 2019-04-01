@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sinatra Views Lab II - Date</title>
+  </head>
+
+  <body>
+    <h1>Today</h1>
+    <% week_day = DateTime.now.strftime('%A') %>
+    <% date_year = DateTime.now.strftime('%Y') %>
+    <% date_month = DateTime.now.strftime('%B') %>
+    <% date_day = DateTime.now.strftime('%-d') %>
+    <p>The date is <%=DateTime.now.strftime("%A, %B %d, %Y") %></p>
+
+  </body>
+</html>
