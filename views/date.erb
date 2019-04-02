@@ -2,6 +2,8 @@
 <html>
   <h1>Today</h1>
 
-  <p>The date is <%=datetime.today%></p>
+  <%today = Date.today%>
+
+  <p>The date is <%=today.strftime("%A")%>, <%=today.strftime("%B")%> <%=today.strftime("%d")%>, <%=today.year%></p>
 
 </html>
