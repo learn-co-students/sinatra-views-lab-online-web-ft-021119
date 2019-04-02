@@ -1,0 +1,21 @@
+App
+  GET /hello
+    sends a 200 status code (FAILED - 1)
+    renders a template called "hello.erb" (FAILED - 2)
+  GET /goodbye
+    sends a 200 status code (FAILED - 3)
+    renders a template called "goodbye.erb" (FAILED - 4)
+  GET /date
+    sends a 200 status code (FAILED - 5)
+    renders a template called "date.erb" (FAILED - 6)
+    includes the current date and time (FAILED - 7)
+
+    Using ERB tags, and the DateTime library, display today's date in a p tag. 
+    The date should be formatted to look something like this 
+    The date is Wednesday, November 18, 2015.
+
+    <p>The date is Tuesday, April 02, 2019.</p>
+
+DateTime.parse('2nd Feb 2019 04:15:06+03:30')
+    DateTime.httpdate('Sat, 03 Feb 2001 04:05:06 GMT')
+    
